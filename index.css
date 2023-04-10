@@ -1,0 +1,142 @@
+:root {
+    --Light-slate-blue: hsl(252, 100%, 67%);
+    --Violet-blue: hsla(256, 72%, 46%, 1);
+    --eViolet-blue: hsla(256, 70%, 40%, 0.3);
+    --transparent: rgba(240, 248, 255, 0.425);
+    --react: hsl(0, 100%, 67%);
+    --reacts: hsla(0, 100%, 95%);
+    --translation-Cobalt-blue: hsla(240, 10%, 10%, 0.1);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --second-yellow: hsl(39, 100%, 87%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --second-Green-teal: hsl(166, 100%, 89%);
+    --Cobalt-blue: hsl(234, 85%, 49%);
+    --second-Cobalt-blue: hsl(234, 85%, 93%);
+}
+
+*{
+    margin: 0;
+}
+
+.f1 {
+    display: flex;
+    background-color: white;
+    border-radius: 10%;
+    box-shadow: 10px 10px 5px var(--translation-Cobalt-blue);
+    max-width: 500px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+}
+
+.first {
+    background-color: var(--Light-slate-blue);
+    flex-basis: 50%;
+    border-radius: 10%;
+    color: white;
+}
+
+.circle {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+    background-image: linear-gradient(var(--eViolet-blue), var(--Light-slate-blue));
+    color: white;
+    text-align: center;
+    font: 33px Arial, Sans-serif;
+    line-height: 40px;
+}
+
+.txt {
+    font-size: large;
+    color: var(--transparent);
+    line-height: 50px;
+}
+
+.result {
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 80px;
+}
+
+.Great {
+    line-height: 70px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.last {
+    text-align: center;
+    font-size: 15px;
+    padding: 15px;
+}
+
+.second {
+    background-color: white;
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+    flex-basis: 50%;
+
+}
+
+.summary {
+    font-size: larger;
+    margin-left: 20px;
+}
+
+.lists{
+    padding: 1rem;
+}
+
+.num {
+    text-align: right;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+    background-color: red;
+    margin-bottom: 1rem;
+    padding: 0.7rem;
+    border-radius: 10px;
+}
+
+.list:nth-child(1) {
+    background-color: var(--reacts);
+    color: var(--react);
+}
+
+.list:nth-child(2) {
+    background-color: var(--second-yellow);
+    color: var(--Orangey-yellow);
+}
+
+.list:nth-child(3) {
+    background-color: var(--second-Green-teal);
+    color: var(--Green-teal);
+}
+
+.list:nth-child(4) {
+    background-color: var(--second-Cobalt-blue);
+    color: var(--Cobalt-blue);
+}
+.button{
+    background-color: rgb(3, 3, 66);
+    padding: 0.7rem;
+    border-radius: 2rem;
+    color: white;
+    margin-bottom: 1rem;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+@media screen and (max-width:600px) {
+    .f1{
+        flex-direction: column;
+    }
+}
